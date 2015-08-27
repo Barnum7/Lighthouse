@@ -1,5 +1,9 @@
 def sum(list)
-  list.reduce(:+)
+  list.each do |ele|
+    sum = 0
+    sum += ele
+  end
+  sum
 end
 
 list1 = [16,21,31,42,55]
@@ -8,4 +12,5 @@ list1 = [16,21,31,42,55]
 puts sum(list1)
 
 # 2. How would you refactor it using an enumerable method other than each? Examples of enumerables: map, select, inject, reject, detect.
-#Refactor with Reduce to make it a single line long! Fucking Ruby man
+
+
